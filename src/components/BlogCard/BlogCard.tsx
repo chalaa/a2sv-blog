@@ -48,8 +48,8 @@ const BlogCard = ({_id,
         </div>
         <div className="flex flex-row gap-4">
           {
-            skills.map((skill) => (
-              <BlogCardButton text={skill} className="bg-[#F5F5F5] text-[#8E8E8E]"/>
+            skills.map((skill, index) => (
+              <BlogCardButton key={index} text={skill} className="bg-[#F5F5F5] text-[#8E8E8E]"/>
             ))
           }
         </div>

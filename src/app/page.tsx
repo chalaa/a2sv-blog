@@ -22,6 +22,7 @@ export default function Home({ Component, pageProps }: AppProps) {
         {
           datas?.map((d)=>(
             <BlogCard 
+            key = {d._id}
             _id={d._id} 
             title={d.title}
             description={d.description}
