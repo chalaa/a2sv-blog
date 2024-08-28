@@ -4,10 +4,8 @@ import BlogHeader from "@/components/BlogHeader/BlogHeader";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import { useGetAllBlogsQuery,  } from '../../Services/api';
-import type { AppProps } from 'next/app';
-import { wrapper } from '../../Services/store'
 
-export default function Home({ Component, pageProps }: AppProps) {
+export default function Home() {
   const { data: data, error, isLoading } = useGetAllBlogsQuery();
 
   if (isLoading) return <div>Loading...</div>;
