@@ -23,7 +23,7 @@ const Header = () => {
           <Link href={""}>About Us</Link>
         </div>
         <div className="text-[#264FAD] w-fit">
-          <Link href={""}>Blogs</Link>
+          <Link href={"/blogs"}>Blogs</Link>
           <div className="w-full h-1 bg-[#264FAD] rounded-lg"></div>
         </div>
         <div>
